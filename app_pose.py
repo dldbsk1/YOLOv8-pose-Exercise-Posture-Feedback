@@ -464,7 +464,7 @@ else:
     CLASSIFY_EVERY_N_FRAMES = 3               # 매 프레임 분류하지 않고 3프레임마다 분류
 
     if run_cam:
-        pose_model, lstm_model, device = load_models()
+        pose_model, lstm_model, device, providers = load_models()
         cap = cv2.VideoCapture(0)
 
         # 최근 관절 시퀀스 저장: LSTM은 analyzer.py와 동일하게 픽셀 좌표 34차원을 입력으로 사용

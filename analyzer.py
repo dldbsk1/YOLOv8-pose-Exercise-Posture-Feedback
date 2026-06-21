@@ -254,8 +254,8 @@ def load_models():
     if not os.path.exists(lstm_path):
         raise FileNotFoundError(f"LSTM ONNX 파일이 없습니다: {lstm_path}")
 
-    pose_model = YOLO(yolo_path)
-
+    pose_model = YOLO(yolo_path, task="pose")
+    
     providers = _get_ort_providers()
     lstm_session = ort.InferenceSession(lstm_path, providers=providers)
     lstm_input_name = lstm_session.get_inputs()[0].name

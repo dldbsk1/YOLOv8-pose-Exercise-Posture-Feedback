@@ -2,12 +2,13 @@
 
 import torch
 from ultralytics import YOLO
+from config import RUNS_DIR, BASE_DIR
 
 # =========================
 # 1) YOLO Pose ONNX 변환
 # =========================
 
-YOLO_PT_PATH = r"C:\Users\DS\Desktop\cv\runs\pose\runs\pose\yolov8s_ph2_cf\weights\best.pt"
+YOLO_PT_PATH = RUNS_DIR / "pose" / "runs" / "pose" / "yolov8s_ph2_cf" / "weights" / "best.pt"
 
 yolo_model = YOLO(YOLO_PT_PATH)
 
@@ -48,8 +49,8 @@ class ExerciseLSTM(nn.Module):
         return out
 
 
-LSTM_PT_PATH = r"C:\Users\DS\Desktop\cv\exercise_lstm_velo.pth"
-LSTM_ONNX_PATH = r"C:\Users\DS\Desktop\cv\exercise_lstm_velo.onnx"
+LSTM_PT_PATH = BASE_DIR / "exercise_lstm_velo.pth"
+LSTM_ONNX_PATH = BASE_DIR / "exercise_lstm_velo.onnx"
 
 device = torch.device("cpu")
 

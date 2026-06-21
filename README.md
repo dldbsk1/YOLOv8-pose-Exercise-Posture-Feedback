@@ -39,7 +39,7 @@ YOLOv8 Pose와 LSTM 기반의 **실시간 운동 자세 분석 및 운동 분류
 ![video\_demo](assets/video_2.jpeg)
 
 ### Main Page - Web Camera
-![cam\_demo](assets/video_1.jpeg)
+![cam\_demo](assets/cam_1.jpeg)
 
 ---
 

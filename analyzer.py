@@ -14,7 +14,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 from ultralytics import YOLO
-from config import YOLO_POSE_ONNX
+from config import YOLO_POSE_ONNX, LSTM_ONNX
 
 from pose_rules import evaluate_pose, EXERCISE_RULES
 
@@ -82,12 +82,10 @@ NUM_CLASSES = 4
 CLASS_NAMES = ["레그레이즈", "런지", "플랭크", "푸쉬업"]
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-LSTM_WEIGHT_PATH = os.path.join(BASE_DIR, "exercise_lstm.pth")
+LSTM_WEIGHT_PATH = str(LSTM_ONNX)
 
 # YOLO Pose 모델: 사전학습 가중치 사용
-YOLO_POSE_WEIGHT = YOLO(str(YOLO_POSE_ONNX))
-_local = os.path.join(BASE_DIR, YOLO_POSE_WEIGHT)
-YOLO_POSE_WEIGHT_PATH = _local if os.path.exists(_local) else YOLO_POSE_WEIGHT
+YOLO_POSE_WEIGHT_PATH = str(YOLO_POSE_ONNX)
 
 IMGSZ = 640
 DET_CONF = 0.25

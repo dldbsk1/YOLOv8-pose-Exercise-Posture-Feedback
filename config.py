@@ -37,7 +37,6 @@ LSTM_CONFIG = MODELS_DIR / "lstm_velo_config.json"
 # -------------------------
 # 기타 파일
 # -------------------------
-FONT_PATH = ASSETS_DIR / "Malgun.ttf"
 
 # -------------------------
 # 클래스 / 모델 설정

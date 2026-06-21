@@ -1,7 +1,15 @@
 @echo off
 
+py -3.12 --version >nul 2>&1
+if errorlevel 1 (
+    echo [ERROR] Python 3.12 is not installed.
+    echo Please install Python 3.12 from https://www.python.org/downloads/
+    pause
+    exit /b
+)
+
 if not exist .venv (
-    python -m venv .venv
+    py -3.12 -m venv .venv
 )
 
 call .venv\Scripts\activate

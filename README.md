@@ -160,10 +160,8 @@ GitHub 업로드 제한으로 인해 대용량 가중치 파일(`.pt`, `.onnx`, 
 ### Required Directory Structure
 
 ```text
-models/
-├─ yolos_ph2_best.pt
+YOLOv8-pose-Exercise-Posture-Feedback/
 ├─ yolos_ph2_best.onnx
-├─ exercise_lstm_velo.pth
 ├─ exercise_lstm_velo.onnx
 └─ lstm_velo_config.json
 ```

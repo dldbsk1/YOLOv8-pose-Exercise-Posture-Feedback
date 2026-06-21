@@ -14,10 +14,9 @@ if not exist .venv (
 
 call .venv\Scripts\activate
 
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 
-python download_weight.py
-
-streamlit run app_pose.py
+python -m streamlit run app_pose.py
 
 pause

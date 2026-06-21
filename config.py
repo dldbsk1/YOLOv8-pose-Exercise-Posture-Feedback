@@ -7,7 +7,6 @@ BASE_DIR = Path(__file__).resolve().parent
 # -------------------------
 # 폴더 경로
 # -------------------------
-MODELS_DIR = BASE_DIR / "models"
 DATASET_DIR = BASE_DIR / "dataset-cf"
 RUNS_DIR = BASE_DIR / "runs"
 
@@ -24,15 +23,15 @@ VAL_LABELS_DIR   = DATASET_DIR / "labels" / "val"
 # -------------------------
 # YOLO 모델 경로
 # -------------------------
-YOLO_POSE_PT = MODELS_DIR / "yolos_ph2_best.pt"
-YOLO_POSE_ONNX = MODELS_DIR / "yolos_ph2_best.onnx"
+YOLO_POSE_PT = "yolos_ph2_best.pt"
+YOLO_POSE_ONNX = "yolos_ph2_best.onnx"
 
 # -------------------------
 # LSTM 모델 경로
 # -------------------------
-LSTM_PTH = MODELS_DIR / "exercise_lstm_velo.pth"
-LSTM_ONNX = MODELS_DIR / "exercise_lstm_velo.onnx"
-LSTM_CONFIG = MODELS_DIR / "lstm_velo_config.json"
+LSTM_PTH = "exercise_lstm_velo.pth"
+LSTM_ONNX = "exercise_lstm_velo.onnx"
+LSTM_CONFIG = "lstm_velo_config.json"
 
 # -------------------------
 # 기타 파일

@@ -6,8 +6,8 @@ MODELS_DIR = BASE_DIR / "models"
 MODELS_DIR.mkdir(exist_ok=True)
 
 FILES = {
-    "yolos_ph2_best.onnx": "https://drive.google.com/file/d/1fLu4qYse7poO6cb6jGgMaYmvJowxdMRC/view?usp=drive_link",
-    "exercise_lstm_velo.onnx": "https://drive.google.com/file/d/1yUWUXh5acNg2qs7VQ-yjYn1_UVothj06/view?usp=drive_link",
+    "yolos_ph2_best.onnx": "https://drive.google.com/uc?export=download&id=1fLu4qYse7poO6cb6jGgMaYmvJowxdMRC",
+    "exercise_lstm_velo.onnx": "https://drive.google.com/uc?export=download&id=1yUWUXh5acNg2qs7VQ-yjYn1_UVothj06",
 }
 
 for filename, url in FILES.items():

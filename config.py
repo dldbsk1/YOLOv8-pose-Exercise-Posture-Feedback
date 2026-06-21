@@ -23,8 +23,8 @@ VAL_LABELS_DIR   = DATASET_DIR / "labels" / "val"
 # -------------------------
 # YOLO 모델 경로
 # -------------------------
-YOLO_POSE_PT = "yolos_ph2_best.pt"
-YOLO_POSE_ONNX = "yolos_ph2_best.onnx"
+YOLO_POSE_PT = BASE_DIR / "yolos_ph2_best.pt"
+YOLO_POSE_ONNX = BASE_DIR / "yolos_ph2_best.onnx"
 
 # -------------------------
 # LSTM 모델 경로

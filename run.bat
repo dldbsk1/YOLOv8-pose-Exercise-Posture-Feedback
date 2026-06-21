@@ -16,7 +16,7 @@ call .venv\Scripts\activate
 
 pip install -r requirements.txt
 
-python download_weights.py
+python download_weight.py
 
 streamlit run app_pose.py
 

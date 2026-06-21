@@ -1,0 +1,81 @@
+# =========================
+# Python / cache
+# =========================
+__pycache__/
+*.py[cod]
+
+# Virtual env
+.venv/
+venv/
+
+# VSCode / OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# =========================
+# Large datasets / raw data
+# =========================
+clean_dataset/
+custom_new/
+dataset/
+dataset-cf/images/
+dataset-cf/labels/
+dataset-cf/check_visual
+eyolo_coco17/
+lstm_test_video/
+
+models/
+
+# =========================
+# Training / experiment outputs
+# =========================
+runs/
+
+# videos generated during experiments
+*.mp4
+*.mov
+*.avi
+
+# =========================
+# Only ignore selected notebooks
+# =========================
+extract-xlarge.ipynb
+extract.ipynb
+random-img.ipynb
+live_pose.ipynb
+lstm_velo.ipynb
+lstm-test.ipynb
+lstm.ipynb
+
+lstm-test.py
+testlstm.py
+lstm.py
+lstm_velo_2.py
+live_pose.py 
+
+# =========================
+# Raw / intermediate CSV logs
+# =========================
+lstm_exercise_data.csv
+lstm_train_data.csv
+lstm_velo_data.csv
+
+# =========================
+# Unused / base pretrained weights
+# =========================
+yolo11s-pose.pt
+yolo26n.pt
+yolov8m-pose.pt
+yolov8n-pose.pt
+yolov8s-pose.pt
+yolov8x-pose.pt
+
+# =========================
+# Optional: old / duplicate model files in root
+# (최종 models/ 안의 것만 쓸 경우)
+# =========================
+exercise_lstm_2.pth
+exercise_lstm.pth
+exercise_lstm_velo.pth
+exercise_lstm_velo.onnx

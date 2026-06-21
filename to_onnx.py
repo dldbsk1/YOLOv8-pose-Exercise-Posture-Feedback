@@ -37,13 +37,11 @@ exported_yolo_path = yolo_model.export(
     imgsz=640,
     opset=12,
     simplify=True,
-    dynamic=False,
+    dynamic=True
 )
 
 exported_yolo_path = Path(exported_yolo_path)
 
-# Ultralytics는 보통 best.onnx를 weights 폴더에 저장하므로,
-# 프로젝트 루트의 yolos_ph2_best.onnx로 복사
 shutil.copy2(exported_yolo_path, YOLO_ONNX_FINAL)
 
 print("[YOLO] ONNX 변환 완료:", YOLO_ONNX_FINAL)

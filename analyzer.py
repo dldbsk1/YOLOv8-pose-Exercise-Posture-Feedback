@@ -12,7 +12,7 @@ import numpy as np
 import onnxruntime as ort
 from ultralytics import YOLO
 
-from config import YOLO_POSE_ONNX, LSTM_ONNX
+from config import YOLO_POSE_ONNX, LSTM_ONNX, YOLO_POSE_PT
 from pose_rules import evaluate_pose
 
 
@@ -28,7 +28,7 @@ DET_CONF = 0.25
 KP_CONF = 0.5
 
 FRAME_STRIDE = 2
-BATCH_SIZE = 1
+BATCH_SIZE = 8
 SEQ_STEP = 10
 
 OE_MIN_CUTOFF = 1.0

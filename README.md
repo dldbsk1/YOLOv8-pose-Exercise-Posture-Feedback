@@ -26,14 +26,20 @@ YOLOv8 Pose와 LSTM 기반의 **실시간 운동 자세 분석 및 운동 분류
 ---
 
 ## 🖼 Demo
+### Start Page
+![start\_demo](assets/start_cam.jpeg)
+![start\_demo](assets/start_video.jpeg)
 
-### Main Page
+### Waiting Status
+![wait\_demo](assets/analyzing.png)
 
-![main\_demo](assets/app_main.png)
+### Main Page - Video
 
-### Result Example
+![video\_demo](assets/video_1.jpeg)
+![video\_demo](assets/video_2.jpeg)
 
-![result\_demo](assets/app_result.png)
+### Main Page - Web Camera
+![cam\_demo](assets/video_1.jpeg)
 
 ---
 
@@ -141,43 +147,6 @@ YOLO Pose로 추출한 관절 좌표 시퀀스를 입력받아 운동 종류를 
 
 ---
 
-## 🚀 Installation
-
-### 1. Clone Repository
-
-```bash
-git clone https://github.com/dldbsk1/YOLOv8-pose-Exercise-Posture-Feedback.git
-cd YOLOv8-pose-Exercise-Posture-Feedback
-```
-
-### 2. Create Virtual Environment
-
-```bash
-python -m venv .venv
-```
-
-### 3. Activate Virtual Environment
-
-#### Windows
-
-```bash
-.venv\Scripts\activate
-```
-
-#### Mac / Linux
-
-```bash
-source .venv/bin/activate
-```
-
-### 4. Install Requirements
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
 ## 📦 Model Weights
 
 GitHub 업로드 제한으로 인해 대용량 가중치 파일(`.pt`, `.onnx`, `.pth`)은 레포지토리에 포함하지 않았습니다.
@@ -185,8 +154,8 @@ GitHub 업로드 제한으로 인해 대용량 가중치 파일(`.pt`, `.onnx`, 
 
 ### Download Links
 
-* **YOLO Pose weights**: [Google Drive Link](여기에_링크_넣기)
-* **LSTM weights**: [Google Drive Link](여기에_링크_넣기)
+* **YOLO Pose weights**: [Google Drive Link](https://drive.google.com/file/d/1fLu4qYse7poO6cb6jGgMaYmvJowxdMRC/view?usp=drive_link)
+* **LSTM weights**: [Google Drive Link](https://drive.google.com/file/d/1yUWUXh5acNg2qs7VQ-yjYn1_UVothj06/view?usp=drive_link)
 
 ### Required Directory Structure
 
@@ -220,30 +189,11 @@ run.bat
 ### 방법 2. 직접 실행
 
 ```bash
-streamlit run app_pose.py
-```
-
----
-
-## 🪟 run.bat Example
-
-프로젝트 루트에 아래 내용의 `run.bat` 파일을 두면 됩니다.
-
-```bat
-@echo off
-
-if not exist .venv (
-    python -m venv .venv
-)
-
-call .venv\Scripts\activate
-
+python -m venv .venv
+.venv\Scripts\activate   # Windows
 pip install -r requirements.txt
 streamlit run app_pose.py
-
-pause
 ```
-
 ---
 
 ## ♻️ Reproducibility

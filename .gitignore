@@ -78,4 +78,3 @@ yolov8x-pose.pt
 exercise_lstm_2.pth
 exercise_lstm.pth
 exercise_lstm_velo.pth
-exercise_lstm_velo.onnx
